@@ -8,7 +8,9 @@ const initialState = {
 };
 
 export const validatePassword = (password) => {
-  // TODO
+
+  const regex = /^\d{6}$/;
+  const isValid = regex.test(password);
   return false;
 };
 
